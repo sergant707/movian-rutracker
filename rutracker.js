@@ -558,7 +558,7 @@
 
     plugin.addSearcher(plugin.getDescriptor().id, config.logo, function (page, query) {
         var url = config.urls.base + config.urls.parts.search + encodeURIComponent(query),
-            nextURL, tryToSearch = true;
+            nextURL, tryToSearch = false;
 
         page.entries = 0;
         loader();
